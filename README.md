@@ -23,13 +23,13 @@ Dataset yang saya gunakan berasal jadi Kaggle yang berisi harga telepon genggam 
 
 ##### Variabel-variabel pada platform estimasi harga telepon genggam adalah sebagai berikut :
 Battery_capacity_mAhC = menginput kapasitas baterai (int64) <br>
-Screen_size_inches = menginput input ukuran layar (float64)
-Processor = menginput Processor (int64)
-RAM_MB = menginput besarnya RAM (int64)
-Internal_storage_GB = menginput besarnya memori internal (float64)
-Rear_camera = menginput pixel kamera belakang (float64)                        
-Number_of_SIMs = menginput banyaknya sim card (int64)
-Resolution_x   = menginputkan resolusi layar (int64)
+Screen_size_inches = menginput input ukuran layar (float64) <br>
+Processor = menginput Processor (int64) <br>
+RAM_MB = menginput besarnya RAM (int64) <br>
+Internal_storage_GB = menginput besarnya memori internal (float64) <br>
+Rear_camera = menginput pixel kamera belakang (float64) <br>                       
+Number_of_SIMs = menginput banyaknya sim card (int64) <br>
+Resolution_x   = menginputkan resolusi layar (int64) <br>
 
 ### Data Preparation
 
