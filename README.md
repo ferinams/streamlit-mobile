@@ -152,6 +152,10 @@ pickle.dump(lr,open(filename,'wb'))
 ### Evalution
 
 ### Deployment
+[klik disini] (https://app-mobile-fe2vghsuqdqckh7xm68rln.streamlit.app/)
+
+![gambar](https://github.com/ferinams/streamlit-mobile/assets/149289420/019eb9a4-1a05-4079-8475-23bf672c8c53)
+
 
 
 
