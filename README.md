@@ -73,6 +73,7 @@ sns.heatmap(numeric_df.corr(),annot=True)
 plt.title("heatmap korelasi (numerik)")
 plt.show()
 ```
+![image] (https://github.com/ferinams/streamlit-mobile/blob/main/output.png)
 
 selanjutnya kita akan melihat grafik jenis prossesor berdasarkan model hp,
 
