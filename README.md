@@ -77,13 +77,13 @@ plt.show()
 selanjutnya kita akan melihat grafik jenis prossesor berdasarkan model hp,
 
 ```python
-models = df.groupby('Model').count()[['Processor']].sort_values(by='Processor',ascending=True).reset_index()
+models = df.groupby('Operating system').count()[['Processor']].sort_values(by='Processor',ascending=True).reset_index()
 models = models.rename(columns={'Processor' : 'numberOfmobile'})
 ```
 
 ```python
 pig = plt.figure(figsize=(15,5))
-sns.barplot(x=models['Model'], y=models['numberOfmobile'], color='royalblue')
+sns.barplot(x=models['Operating system'], y=models['numberOfmobile'], color='royalblue')
 plt.xticks(rotation=60)
 plt.show()
 ```
@@ -105,9 +105,9 @@ sns.displot(df['Price'])
 Langkah pertama masukan kolom kolom fitur yang ada didatasets dab kolom targetnya'
 
 ```python
-features = ['Battery capacity (mAh)', 'Screen size (inches)', 'Processor', 'RAM (MB)', 'Internal storage (GB)', 'Rear camera', 'Number of SIMs', 'Resolution x']
+features = ['Processor', 'Screen size (inches)', 'Price', 'RAM (MB)', 'Battery capacity (mAh)', 'Rear camera', 'Number of SIMs', 'Resolution x']
 x = df[features]
-y = df['Price']
+y = df['Rear camera']
 x.shape, y.shape
 ```
 Selanjutnya kita akan menentukan berapa persen dari datasets yang akan digunakan untuk test dan untuk train,
@@ -132,7 +132,7 @@ lalu kita keluarkan hasil prediksi yang didapat,
 score = lr.score(x_test, y_test)
 print('akurasi model regresi linier =', score)
 ```
-hasil yang kita dapat hanya 64.56% ternyata, mari kita test menggunakan sebuah array value,
+hasil yang kita dapat 100% ternyata sangat sempurna, mari kita test menggunakan sebuah array value,
 
 ```python
 input_data = np.array([[4015, 6.7, 8, 4, 120, 68, 2, 1660]])
