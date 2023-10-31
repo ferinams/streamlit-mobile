@@ -40,7 +40,8 @@ Untuk data Collection ini,saya mendapatkan dataset yang nantinya digunakan dari 
 #### Data Discovery And Profiling
 Untuk bagian ini kita gunakan teknik EDA
 Pertama Kita mengimport semua library yang dibutuhkan
-```python import pandas as pd
+```python
+import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
 import seaborn as sns
