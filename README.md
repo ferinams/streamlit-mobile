@@ -22,7 +22,7 @@ Mencari solusi untuk memudahkan orang yang sedang mencari harga Hp sebelum membe
 Dataset yang saya gunakan berasal jadi Kaggle yang berisi harga telepon genggam (hp). Dataset ini merupakan sekumpulan data yang dikumpulkan dari website populer tentang harga hp terbaru. Dataset ini mengandung 1359 baris dan lebih dari 8 columns setelah dilakukan data cleaning.
 
 ##### Variabel-variabel pada platform estimasi harga telepon genggam adalah sebagai berikut :
-Battery_capacity_mAhC = menginput kapasitas baterai (int64)
+Battery_capacity_mAhC = menginput kapasitas baterai (int64) <br>
 Screen_size_inches = menginput input ukuran layar (float64)
 Processor = menginput Processor (int64)
 RAM_MB = menginput besarnya RAM (int64)
