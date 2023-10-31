@@ -5,7 +5,7 @@ model = pickle.load(open('mobile_phone.sav', 'rb'))
 
 st.title('Estimasi Harga Telepon Genggam')
 
-Battery_capacity_mAh = st.number_input('input kapasitas baterai')
+Battery_capacity_mAhC = st.number_input('input kapasitas baterai')
 Screen_size_inches = st.number_input('input ukuran layar')
 Processor = st.number_input('input Processor')
 RAM_MB = st.number_input('input besarnya RAM')
@@ -18,7 +18,7 @@ predict = ''
 
 if st.button('cek harga') : 
     predict = model.predict(
-        [[Battery_capacity_mAh, Screen_size_inches, Processor, RAM_MB, Internal_storage_GB, Rear_camera, Number_of_SIMs]]
+        [[Battery_capacity_mAhC, Screen_size_inches, Processor, RAM_MB, Internal_storage_GB, Rear_camera, Number_of_SIMs, Resolution_x]]
     )
 
-    st.write ('estmasi harga saham dalam IDR (juta)', predict)
+    st.write ('estmasi harga saham dalam EUR', predict)
